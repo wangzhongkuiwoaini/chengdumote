@@ -1,0 +1,105 @@
+#header{
+	background: #000;
+	min-height: 60px;
+	position: fixed;
+	z-index: 9999;
+	left:0;
+	top:0;
+	right:0;
+}
+.navbar-default{
+	background: transparent;
+	border-color: transparent;
+	
+}
+.navbar {
+    min-height: 60px;
+    margin-bottom: 0px;
+}
+a.logo img{
+	max-height: 60px;
+	transition: opacity  1s  ease;
+}
+a.logo img:hover{
+	opacity: .4;
+}
+a.logoii img{
+	max-height: 60px;
+	display: none;
+}
+/*向下滚动  添加类名*/
+.scrolled  #header{
+	background: #fff;
+}
+.scrolled .logoii img{
+	display: block;
+	max-height: 60px;
+} 
+.scrolled .logo{
+	display: none;
+} 
+
+/*导航文字*/
+.nav>li>a{
+	padding-top:0;
+	padding-bottom: 0;
+	line-height: 60px;
+	
+}
+
+/*鼠标滑过     active   active a:hover*/
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover
+{
+   color:#c3924d;
+   background: transparent;
+}
+
+/*媒体查询  小于768*/
+@media (max-width:767px){
+	.navbar-default .navbar-nav > li > a{
+		background: #fff;
+		color:#333;
+		line-height: 30px;
+	}
+	.navbar-default .navbar-nav>li>a:hover,
+	.navbar-default .navbar-nav > .active > a,
+	.navbar-default .navbar-nav>.active> a:hover
+	{
+		background: #fff;
+		color:#c3924d;
+	}
+	.navbar-nav {
+      margin: 0px -15px;
+	}
+.scrolled .navbar-default{
+		background: #fff;
+	}
+	/*三道杠按钮*/
+	.navbar-default .navbar-toggle{
+		border-color: #ddd;
+		border-radius: 0;
+	}
+	.navbar-default .navbar-toggle  .icon-bar{
+		background-color:#c3924d;
+	}
+	.navbar-default .navbar-toggle:hover{
+		background: transparent;
+		border-color:#c3924d;
+	}
+	
+	.navbar-default{
+		background: #000;
+	}
+	
+
+
+}
+
+
+
+
+
+
+
